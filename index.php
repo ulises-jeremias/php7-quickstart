@@ -6,7 +6,7 @@
   * @package php7-quickstart
   * @version v0.3
   * @author ulises-jeremias <github.com/ulises-jeremias/> COD-Project
-  * @copyright 2016 - PHP7-QuickStart
+  * @copyright 2017 - PHP7-QuickStart
   * @license	http://opensource.org/licenses/MIT	MIT License
   * @link http://github.com/ulises-jeremias/php7-quickstart
 */
