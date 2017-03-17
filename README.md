@@ -8,7 +8,7 @@
 
 Welcome to the PHP7-quickstart-repository, a functional application that you can use as the skeleton for your new applications.
 
-This repository corresponds to an update of [PHP5-quickstart](https://github.com/ulises-jeremias/php7-quickstart/).
+This repository corresponds to an update of [PHP5-quickstart](https://github.com/ulises-jeremias/php5-quickstart/).
 
 * Supports multiple databases with different engines using PDO **simultaneously**
   * MySQL 5.1+
