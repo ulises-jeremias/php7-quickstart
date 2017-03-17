@@ -168,7 +168,7 @@ Create __./core/controllers/helloController.php__
 
   }
 ```
-Create __./html/hello/hello.php__
+Create __./templates/hello/hello.php__
 
 ```php
 
