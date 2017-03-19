@@ -139,7 +139,7 @@ final class Connection extends PDO {
     *
     * @return int/float/string
   */
-  final public function scape($e)
+  final public function escape($e)
   {
     if(!isset($e)) {
       return '';
@@ -220,7 +220,7 @@ final class Connection extends PDO {
     $values = '';
     foreach ($e as $campo => $v) {
       $query .= $campo . ',';
-      $values .= '\'' . $this->scape($v) . '\',';
+      $values .= '\'' . $this->escape($v) . '\',';
     }
     $query[strlen($query) - 1] = ')';
     $values[strlen($values) - 1] = ')';
@@ -250,7 +250,7 @@ final class Connection extends PDO {
 
     $query = "UPDATE $table SET ";
     foreach ($e as $campo => $valor) {
-      $query .= $campo . '=\'' . $this->scape($valor) . '\',';
+      $query .= $campo . '=\'' . $this->escape($valor) . '\',';
     }
     $query[strlen($query) - 1] = ' ';
     $query .= "WHERE $where $limit;";

@@ -76,12 +76,18 @@ final class Sessions extends Models
 
   final public function connected_user() : array
   {
-    return ($this->session_in_use()) ? Users()[$_SESSION[SESS_APP_ID]] : null;
+    $id = $_SESSION[SESS_APP_ID];
+    return ($this->session_in_use()) ? $this->db->select('*','Users',"idUser='$id'",'LIMIT 1')[0] : null;
   }
 
   final public function is_granted() : bool
   {
     return ($this->session_in_use()) ? ($this->connected_user()['role'] == 'admin') : false;
+  }
+
+  final public function __destruct()
+  {
+    parent::__destruct();
   }
 
 }

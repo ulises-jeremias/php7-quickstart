@@ -16,6 +16,7 @@ abstract class Models
   protected $id; // Every table in the database has a column for the identifier.
   protected $router;
   abstract static function get_instance();
+
   public function __construct()
   {
     $this->db = new Connection;
@@ -26,6 +27,11 @@ abstract class Models
   protected function Purifier($elem)
   {
       return str_replace(array('<script>','</script>','<script src','<script type='), '', $elem);
+  }
+
+  protected function __destruct()
+  {
+    $this->db = null;
   }
 
 }
