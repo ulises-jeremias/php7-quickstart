@@ -1,7 +1,7 @@
 # PHP7-QuickStart
 
 [![MIT License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://opensource.org/licenses/MIT)
-![Made in PHP 7](https://img.shields.io/badge/php-7-blue.svg)
+![Made in PHP 7](https://img.shields.io/badge/PHP-7-blue.svg)
 ![Stable Version](https://img.shields.io/badge/stable-1.0.0-blue.svg)
 
 ## Introduction
