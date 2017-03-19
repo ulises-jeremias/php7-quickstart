@@ -1,9 +1,9 @@
 <?php
 
   $db = new Connection();
-  $name = $db->real_escape_string($_POST['name']);
-  $surname = $db->real_escape_string($_POST['surname']);
-  $email = $db->real_escape_string($_POST['email']);
+  $name = $db->escape($_POST['name']);
+  $surname = $db->escape($_POST['surname']);
+  $email = $db->escape($_POST['email']);
   $pass = Func::encrypt($_POST['pass']);
   $sql = $db->query("SELECT idUser FROM Users WHERE email='$email' LIMIT 1;");
   if($db->rows($sql) > 0) {
