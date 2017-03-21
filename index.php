@@ -4,7 +4,7 @@
   * PHP7-QuickStart - MVC Architecture for Web Applications
   * PHP Version 7
   * @package php7-quickstart
-  * @version v1.0
+  * @version v1.1
   * @author ulises-jeremias <github.com/ulises-jeremias/> COD-Project
   * @copyright 2017 - PHP7-QuickStart
   * @license	http://opensource.org/licenses/MIT	MIT License

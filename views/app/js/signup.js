@@ -56,7 +56,7 @@ function goSignup() {
           result = '<div class="alert alert-dismissible alert-warning">';
           result += '<button type="button" class="close" data-dismiss="alert">x</button>';
           result += '<h4>ERROR</h4>';
-          if (signup_query(email)) {
+          if (!signup_query(email)) {
             result += '<p><strong>Email has invalid characters.</strong></p>';
           } else {
             result += '<p><strong>Passwords do not match or have invalid characters.</strong></p>';
