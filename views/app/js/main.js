@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       p.innerHTML = '&copy; ' + __tn(document, 'title')[0].innerHTML;
       footer.appendChild(p);
+      footer.id = 'footer';
       span.className = 'fa fa-arrow-up cmd_gotop';
-      if (!__tn('footer')) {
+      if (!__('footer')) {
         body.appendChild(footer);
       }
       body.appendChild(span);
