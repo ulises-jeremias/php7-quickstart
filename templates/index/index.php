@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <?php $this->render('overall/header'); ?>
+  <?php $this->include('overall/header'); ?>
   <body>
-  	<?php $this->render('public/presentation'); ?>
-    <?php $this->render('overall/topnav'); ?>
-    <?php $this->render('overall/footer'); ?>
+  	<?php $this->include('public/presentation'); ?>
+    <?php $this->include('overall/topnav'); ?>
+    <?php $this->include('overall/footer'); ?>
   </body>
 </html>

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     function prepare_view() {
       var body = __tn(document, 'body')[0],
@@ -9,19 +9,21 @@ document.addEventListener('DOMContentLoaded', (function() {
       p.innerHTML = '&copy; ' + __tn(document, 'title')[0].innerHTML;
       footer.appendChild(p);
       span.className = 'fa fa-arrow-up cmd_gotop';
-      body.appendChild(footer);
+      if (!__tn('footer')) {
+        body.appendChild(footer);
+      }
       body.appendChild(span);
     }
 
     function paralax(){
-    	$(window).scroll(function() {
-    		var scrollBar = $(window).scrollTop(),
-    		    position = scrollBar * 0.04;
+      $(window).scroll(function() {
+        var scrollBar = $(window).scrollTop(),
+            position = scrollBar * 0.04;
 
-    		$('body').css({
-    			'background-position': '0 ' + position + 'px'
-    		});
-    	});
+        $('body').css({
+          'background-position': '0 ' + position + 'px'
+        });
+      });
     };
 
     function scrollTop(){
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', (function() {
     paralax();
     scrollTop();
 
-}), false);
+});
 
 //----------------------------------Form Animation------------------------------------------------------------
 
@@ -79,7 +81,7 @@ $(window, document, undefined).ready(function() {
   });
 
   $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
-  	$(this).removeClass('is-active');
+    $(this).removeClass('is-active');
   });
 
 });

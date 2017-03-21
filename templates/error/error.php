@@ -1,6 +1,6 @@
 <html>
-	<?php $this->render('overall/header'); ?>
+	<?php $this->include'overall/header'); ?>
 <body>
-	<?php $this->render('overall/footer'); ?>
+	<?php $this->include'overall/footer'); ?>
 </body>
 </html>

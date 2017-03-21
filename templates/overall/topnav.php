@@ -49,8 +49,8 @@
 <?php
 
 if(!$this->sessions->session_in_use()) {
-  $this->render('public/login');
-  $this->render('public/signup');
+  $this->include('public/login');
+  $this->include('public/signup');
 }
 
 ?>

@@ -56,6 +56,11 @@ abstract class Controller
     return include(HTML_DIR . $template . '.php');
   }
 
+  protected function include($template)
+  {
+    return $this->render($template);
+  }
+
 }
 
 ?>
