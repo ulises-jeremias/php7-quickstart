@@ -149,7 +149,7 @@ define('E_ERNO','');
 
 //------------------------------------------------
 # Current version of the framework
-define('VERSION', '1.0');
+define('VERSION', '1.1');
 
 ?>
 ```
