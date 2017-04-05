@@ -82,7 +82,7 @@ final class Sessions extends Models
 
   final public function is_granted() : bool
   {
-    return ($this->session_in_use()) ? ($this->connected_user()['role'] == 'admin') : false;
+    return ($this->session_in_use()) ? ($this->connected_user()['role'] == 1) : false; // 1 correspond to admin users - 2 correspond to normal users
   }
 
   final public function __destruct()
